@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(106, 117, 118);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+.container p{
+    display: inline;
+    margin-left: 65px;
+}
+.container .pic{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container img{
+    height: 500px;
+    padding: 30px;
+}
+.container .days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .day,
+.container .number,
+.container .prenumber,
+.container .numberspec{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .prenumber{
+    color: rgba(134, 207, 214, 0.4);
+}
+.container .number:hover,
+.container .prenumber:hover{
+    border: 2px solid;
+    border-color: aliceblue;
+    border-radius: 25%;
+}
+.container .day{
+    font-size: 85%;
+}
+.container .numberspec:hover{
+    border: 2px solid;
+    border-color: rgba(42, 157, 24, 10);
+    border-radius: 25%;
+    background-color: rgba(42, 157, 24, .5);
+}
+.container .date{
+    width: 380px;
+    padding: 25px;
+}
+.container h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 15px 30px;
+    display: inline;
+}
+.container p span{
+    margin: 1px;
+    font-size: 20px;
+}
+.container p a{
+    color: rgb(255, 255, 255);
+}
