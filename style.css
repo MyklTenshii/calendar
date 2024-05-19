@@ -118,8 +118,7 @@ body{
         display: flex;
         margin: 15vh auto;
         width: 95%;
-        height: 95%;
-        padding: 50px;
+        height: 100%;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -144,7 +143,7 @@ body{
     }
     li{
         padding: 5px;
-        text-align: center;
+    text-align: center;
     border: 1px solid;
     border-color: transparent;
     background-color: rgba(255, 255, 255, .7);
