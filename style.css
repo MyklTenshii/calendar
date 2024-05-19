@@ -101,7 +101,7 @@ body{
 
 @media only screen and (max-width: 650px){
     .mob main{
-        display: flex;
+        display: inline;
     }
     body{
         color: rgb(255, 255, 255);
@@ -118,7 +118,8 @@ body{
         display: flex;
         margin: 15vh auto;
         width: 95%;
-        height: 100%;
+        height: 95%;
+        padding: 5px;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -159,7 +160,6 @@ body{
     .first,
     .first~li {
         opacity: 1 !important;
-        font-weight: 500;
         color: black;
     }
     .last,
@@ -167,12 +167,12 @@ body{
         opacity: 1 !important;
         color: black;
     }
-    .contnov{
+
+.contnov{
         background-image: url(yotsuuu.jpg);
         background-size: cover;
     }
-
-    .contoct{
+.contoct{
         background-image: url(topzz.jpg);
         background-size: cover;
     }
