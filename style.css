@@ -23,10 +23,7 @@ body{
     background: rgb(106, 117, 118);
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
-.container p{
-    display: inline;
-    margin-left: 65px;
-}
+
 .container .pic{
     position: absolute;
     top: 0;
@@ -59,6 +56,9 @@ body{
     border-color: aliceblue;
     border-radius: 25%;
 }
+.mob main{
+    display: none;
+}
 .container .day{
     font-size: 85%;
 }
@@ -78,10 +78,143 @@ body{
     margin: 0 15px 30px;
     display: inline;
 }
-.container p span{
-    margin: 1px;
-    font-size: 20px;
+
+.btn{
+    border: transparent;
+    background: transparent;
+    font-size: 50px;
+    left: 40%;
+    position: absolute;
+    top: 100%;
+    margin: 10px;
+
 }
-.container p a{
-    color: rgb(255, 255, 255);
+.btn2{
+    border: transparent;
+    background: transparent;
+    font-size: 50px;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 650px){
+    .mob main{
+        display: flex;
+    }
+    body{
+        color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        color: black;
+    }
+    .container{
+        display: none;
+    }
+    .calendar{
+        display: flex;
+        margin: 15vh auto;
+        width: 95%;
+        height: 95%;
+        padding: 50px;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .sep-calendar{
+        box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2), -3px -3px 10px 0 #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .sep-calendar h1{
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid;
+        border-color: rgba(1, 1, 1, 10);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .sep-calendar ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        list-style: none;
+    }
+    li{
+        padding: 5px;
+        text-align: center;
+    border: 1px solid;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, .7);
+    }
+    li:nth-child(7n + 1) {
+        color: rgb(250, 11, 11) !important;
+    }
+    .prev,
+    .prev~li {
+        opacity: 1;
+        color: black;
+    }
+    .first,
+    .first~li {
+        opacity: 1 !important;
+        font-weight: 500;
+        color: black;
+    }
+    .last,
+    .last~li {
+        opacity: 1 !important;
+        color: black;
+    }
+    .contnov{
+        background-image: url(yotsuuu.jpg);
+        background-size: cover;
+    }
+
+    .contoct{
+        background-image: url(topzz.jpg);
+        background-size: cover;
+    }
+.contsept{
+        background-image: url(kugisaki.jpg);
+        background-size: cover;
+    }
+.contaug{
+        background-image: url(akaman.jpg);
+        background-size: cover;
+    }
+.contjul{
+        background-image: url(nakiri.jpg);
+        background-size: cover;
+    }
+.contjun{
+        background-image: url(eulaaa.jpg);
+        background-size: cover;
+    }
+.contmay{
+        background-image: url(kron.jpg);
+        background-size: cover;
+    }
+.contapr{
+        background-image: url(remm.jpg);
+        background-size: cover;
+    }
+.contmar{
+        background-image: url(Ichigo.jpg);
+        background-size: cover;
+    }
+.contfeb{
+        background-image: url(mishima.jpg);
+        background-size: cover;
+    }
+.contjan{
+        background-image: url(ayanami.jpg);
+        background-size: cover;
+    }
+.contdec{
+    background-image: url(marin2.jpg);
+    background-size: cover;
+}
 }
